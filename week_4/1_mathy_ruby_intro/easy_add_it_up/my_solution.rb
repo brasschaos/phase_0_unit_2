@@ -8,13 +8,18 @@
 
 # 1. Pseudocode
 
-# What is the input?
-# What is the output? (i.e. What should the code return?)
-# What are the steps needed to solve the problem?
+# What is the input? The input is an array of numbers
+# What is the output? The output is the sum of the numbers in the array
+# What are the steps needed to solve the problem? I will iterate over the array, adding the next number to a total within a variable
+# that it returns after the loop is complete
 
 
 # 2. Initial Solution
-
+def total(array) {
+	array.each do |i|
+		toats = toats + i
+}
+return toats
 
 
 

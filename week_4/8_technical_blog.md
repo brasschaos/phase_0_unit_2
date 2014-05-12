@@ -11,7 +11,7 @@
 
 
 ## Release 0: New file
-Copy your blog tempate into a new HTML file named `week4_technical.html`. 
+Copy your blog tempate into a new HTML file named `week4_technical_blog.html`. 
 
 
 ## Release 1: Research a Topic
@@ -33,7 +33,7 @@ Research one of the following questions/topics. In your blog post, you will want
 
 If you want to go more in-depth with any of these research memory use and link it to your strategy for deciding which to use. 
 
-Write this blog for an audience of newb programmers.
+Write this blog for an audience of nub programmers.
 
 
 ## Release 2: Submission

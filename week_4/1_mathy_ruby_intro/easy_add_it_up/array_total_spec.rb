@@ -1,4 +1,4 @@
-require_relative "my_solution"
+require "my_solution.rb"
 
 describe 'total' do
   let(:array_1) { [1, 2, 3, 4, 5, 5, 7] }

@@ -72,4 +72,3 @@ end
 # needed a little cleanup at the end so i learned those new methods, .strip and .insert
 # yay! it checks out with rspec, 8 examples 0 failures
 #   I changed the 'require_relative' in the array_total_spec.rb to just 'require', it wasnt working before that.
-#

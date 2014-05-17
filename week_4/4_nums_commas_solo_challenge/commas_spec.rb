@@ -1,6 +1,4 @@
-require_relative "my_solution" 
-#=> Make sure you change this to the name of your code file! Save that file
-# into this repo. 
+require "my_solution.rb"
 
 
 def random_num(min, max)

@@ -1,7 +1,7 @@
 # U2.W4: Create Accountability Groups
 
 
-# I worked on this challenge [by myself].
+# I worked on this challenge with Justin Harnoss.
 
 # 2. Pseudocode
 
@@ -21,17 +21,16 @@
 # 3. Initial Solution
 
 
-def groupMaker(array)
-  acctGroups = Hash.new
+# def groupMaker(array)
+#   acctGroups = Hash.new
 
-   var count = 0   
-  array.each do |eye|
-        group1[] = group1 + eye + " "   # adding names to first group
-        count ++                        # 
-        if count % 4 == 0               # counting up to 4
-                  
-        
-end
+#    var count = 0   
+#   array.each do |eye|
+#         group1[] = group1 + eye + " "   # adding names to first group
+#         count ++                        # 
+#         if count % 4 == 0               # counting up to 4
+                          
+# end
 
 
 
@@ -39,9 +38,24 @@ end
 
 # 4. Refactored Solution
 
+def groupMaker(array)
+  array.shuffle!
+  acctGroups = []
+   until array.empty?
+  acctGroups.push(array.pop(4))
+  end
+end
 
-
-
+# def groupMaker(array)
+#   array.shuffle!
+#   acctGroups = []
+#    until array.empty?
+#   acctGroups.push(array.pop(4))
+#   end
+#   acctGroups.each do |g|
+#     if g.length < 4
+#   # g.push(acctGroups.pop(4))      
+# end
 
 
 

@@ -38,35 +38,81 @@
 
 # 4. Refactored Solution
 
-def groupMaker(array)
-  array.shuffle!
-  acctGroups = []
-   until array.empty?
-  acctGroups.push(array.pop(4))
-  end
-end
-
 # def groupMaker(array)
 #   array.shuffle!
 #   acctGroups = []
 #    until array.empty?
 #   acctGroups.push(array.pop(4))
 #   end
-#   acctGroups.each do |g|
-#     if g.length < 4
-#   # g.push(acctGroups.pop(4))      
 # end
 
+def create_cohort(n)
+  $cohort = Array.new
+  i = 1
+  (n).times do
+  $cohort.push("Person "+ i.to_s)
+  i += 1
+  end
+  puts $cohort
+end
+
+def groupMaker(array)
+  array.shuffle!
+  acctGroups = []
+   until array.empty?
+  acctGroups.push(array.pop(4))
+  end
+  acctGroups.each do |g|
+    if g.length < 4
+   g.push(acctGroups.pop(4))      
+end
 
 
 
-# 1. DRIVER TESTS GO BELOW THIS LINE
+
+# 1. DRIVER TESTS GO BELOW THIS LINE    >>> Copied from Harnoss and adapted <<<
 
 
+#1 Takes an array as input
+def test1(array)
+	puts "Test1: Should take an array as argument -> "
+	array.class == Array ? true : false
+end
+#2 Gives an array as ouput
+def test2(array)
+	puts "Test2: Should return an array -> "
+	groupMaker(array).class == Array ? true : false
+end
+
+#3 Gives an array of arrays as output
+def test3(array)
+	puts "Test3: Should return an array of arrays -> "
+	groupMaker(array).any? {|x| x.class != Array} ? false : true
+end
+
+#4 Groups have max 4 members
+def test4(array)
+	puts "Test4: Groups should have 4 members max -> "
+	groupMaker(array).any? {|x| x.length > 4} ? false : true
+end
+
+#5 Creates groups randomly
+def test5(array)
+	puts "Test5: Groups should be created randomly ->"
+	groupMaker(array) != groupMaker(array) ? true : false
+end
+
+#TESTS
+test1($cohort)
+test2($cohort)
+test3($cohort)
+test4($cohort)
+test5($cohort)
 
 
 
 
 # 5. Reflection 
 
-
+# Man this was more complex than i thought it would be, mostly because driver code is giving me a lot of trouble. 
+# Justin helped me realize a few new ideas, which helped me cut my code down by several lines.

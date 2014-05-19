@@ -38,4 +38,4 @@ end
 #  At one point during this exercise I realized that 90% of the time I spend on these exercises is trying to use the tricks from before,
 #  and not using what new things are being shown in each exercise. I may have copied the from the spec file more or less, but its the only thing 
 #  I've tried that worked perfectly. So I need to remember that with each exercise, I'm supposed to use new material, not try to make it work purely
-#  with what I already know.
+#  with what I already know. The addition of regular expressions is welcome, but a new complication to take in none the less.

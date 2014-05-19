@@ -142,5 +142,5 @@ p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw
 
 # Reflection
  # omg regular expressions are cool
- #  at this point i managed to refactor a few lines out of it but im pretty sure i need to implement the found_match switch to get
- #  it to do more than just the first letter
+ #  at this point i managed to refactor a few lines out of it but im pretty sure i need to implement the found_match switch
+ #  to get it to do more than just the first letter..

@@ -33,9 +33,9 @@ For this challenge, we will need to break down the algorithm into the following 
 Example given 4563 9601 2200 1999
 Origin: 4   5   6   3   9   6   0   1   2   2   0   0   1   9   9   9
 Step 1: 8   5  12   3  18   6   0   1   4   2   0   0   2   9  18   9
-Step 2: 8 + 5 + 1 + 2 + 3 + 1 + 8 + 6 + 0 + 1 + 4 + 2 + 0 + 0 +2+ 9 + 1 + 8 + 9
+Step 2: 8 + 5 + 1 + 2 + 3 + 1 + 8 + 6 + 0 + 1 + 4 + 2 + 0 + 0 + 2 + 9 + 1 + 8 + 9
 Step 3: 70 (total above) % 10 == 0
-Step 4: Profit
+Step 4: Huge, Illegal Profit
 ```
 
 Your class will need to return `true` or `false` when we call the `#check_card`.  Your class needs to be initialized with a credit card number that is exactly 16 digits otherwise you should receive an `ArgumentError`.

@@ -5,11 +5,12 @@
 # EXPLANATION OF require_relative
 #
 #
-require_relative 'state_data'
+require 'state_data.rb'  # Links this code to the named file. I always changed mine to just 'require' because I always keep them in the same dir.
+                         # Relative is if its not in the same directory as the file being ran: '../1_die/invisible_spec.rb'
 
 class VirusPredictor
 
-  def initialize(state_of_origin, population_density, population, region, regional_spread)
+  def initialize(state_of_origin, population_density, population, region, regional_spread)    # prepares method variables for state_data.rb data
     @state = state_of_origin
     @population = population
     @population_density = population_density
@@ -17,25 +18,30 @@ class VirusPredictor
     @next_region = regional_spread
   end
 
-  def virus_effects  #HINT: What is the SCOPE of instance variables?
+  def virus_effects  #HINT: What is the SCOPE of instance variables?   >>> Only within the method in which it was created
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
-  private  #what is this?  what happens if it were cut and pasted above the virus_effects method
+    #what is this?  what happens if it were cut and pasted above the virus_effects method? 
+                           # >>> All methods below 'private' will not be accessable to outside methods or objects. If it were pasted higher, any 
+                           # variables would only be usable by their respective methods, barring communication of variable contents and symbol references.
 
   def predicted_deaths(population_density, population, state)
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
-    else 
-      number_of_deaths = (@population * 0.05).floor
-    end
+    # if @population_density >= 200
+    #   number_of_deaths = (@population * 0.4).floor
+    # elsif @population_density >= 150
+    #   number_of_deaths = (@population * 0.3).floor
+    # elsif @population_density >= 100
+    #   number_of_deaths = (@population * 0.2).floor
+    # elsif @population_density >= 50
+    #   number_of_deaths = (@population * 0.1).floor
+    # else 
+    #   number_of_deaths = (@population * 0.05).floor
+
+
+
+ end
 
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 

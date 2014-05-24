@@ -11,7 +11,7 @@
 
 ## Summary
 
-In this challenge you want to create a simple guessing game. Think in terms of when you were 7 and asked your friends to identify the number you were thinking. 
+In this challenge you want to create a simple guessing game. Think in terms of when you were 17 and asked your friends to identify the number you were thinking. 
 
 Your `GuessingGame` class should be initialized with an integer called `answer`.
 

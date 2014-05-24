@@ -5,24 +5,25 @@
 
 # 2. Pseudocode
 
-# Input:
-# Output:
-# Steps:
+# Input:  a maximum number of sides
+# Output: function generates a die that can be #roll-ed to return a random number up to the number of sides chosen.
+# Steps: define number of sides as a n, set random floor to 1 and set random range cealing to n. Set function to return random number within range. 
 
 
 # 3. Initial Solution
 
 class Die
   def initialize(sides)
-    # code goes here
+    die = Die.new
   end
   
   def sides
-    # code goes here
+    return sides + " sided die."
   end
   
   def roll
-    # code goes here
+    roll = rand(1..sides)
+    return roll
   end
 end
 

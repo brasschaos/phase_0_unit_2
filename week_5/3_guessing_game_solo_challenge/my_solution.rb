@@ -14,10 +14,33 @@
 
 class GuessingGame
   def initialize(answer)
-    # Your initialization code goes here
+    new_game = GuessingGame.new
+    if answer = NaN
+    	raise 'ArgumentError'
   end
   
-  # Make sure you define the other required methods, too
+  def guess
+  	guess = gets.chomp!("^.^ Please enter your guess! : (a number)")
+  	if guess == NaN
+  		guess = gets.chomp!(":/ Please enter a number as your guess, human: ")
+  		if guess == NaN
+  			puts "Foolish humans, return to your shopping malls."
+  			raise 'ArgumentError'
+    	end
+    end
+  end
+
+  def solved
+  solved = false
+  if guess > answer
+  		return :high
+  		new_game.guess
+  elsif guess < answer
+  		return :low
+  		new_game.guess
+  elsif guess == answer
+  	solved = true
+  end
 end
 
 

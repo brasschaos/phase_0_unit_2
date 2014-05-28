@@ -1,7 +1,7 @@
 [Week 5 Home](../)
 
 # U2.W5: Build a Simple Guessing Game **SOLO CHALLENGE**
-
+ 
 
 ## Learning Competencies
 - Break down problems into implementable pseudocode 

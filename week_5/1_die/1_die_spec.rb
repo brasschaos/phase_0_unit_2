@@ -5,7 +5,7 @@ describe Die do
     it 'expects a single argument' do
       Die.instance_method(:initialize).arity.should eq 1
     end
-
+ 
     it 'raises an ArgumentError if sides < 1' do
       expect {
         Die.new(0)

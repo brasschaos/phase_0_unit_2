@@ -37,7 +37,7 @@ In boggle, you can spell out words by collecting letters that are immediately ne
   end
 
   puts create_word(boggle_board, [2,1], [1,1], [1,2], [0,3])  #=> returns "code"  
-  puts create_word(boggle_board, [0,1], [0,2], [1,2])  #=> creates what california slang word?
+  puts create_word(boggle_board, [0,1], [0,2], [1,2])  #=> creates what california slang word from the 1970's?
   ```
 
 #### Part 2: Write a method that takes a row number and returns all the elements in the row.  

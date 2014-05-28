@@ -15,28 +15,39 @@
 
 # 3. Initial Solution
 
-class Die
-  def initialize(labels)
-  stringDie = Die.new
-  	if labels.empty?         # it cant have a negative value cause its an array 
-  	raise 'ArgumentError'
-  	end
-  end
-
-  def sides
-  	return labels.length + " sided string-die."
-  end
-
-  def roll
-  	theRoll = rand(labels[0]..labels[labels.length])
-  	return theRoll
-  end
-end
+# class Die
+#   def initialize(sides)
+#     @sides = sides
+#      raise ArgumentError if sides.empty?
+#   end
+  
+#   def sides
+#     return @sides.size
+#   end
+  
+#   def roll
+#     return rand(@sides)+1
+#   end
+# end
 
 
 
 # 4. Refactored Solution
 
+class Die
+  def initialize(sides)
+    @sides = sides
+     raise ArgumentError if sides.empty?
+  end
+  
+  def sides
+    return @sides.size
+  end
+  
+  def roll
+    return @sides[rand(@sides.size)]
+  end
+end
 
 
 
@@ -50,3 +61,4 @@ end
 
 
 # 5. Reflection 
+# tricky tricky. no research required, just used to spec file and the rspec results to tweak it right

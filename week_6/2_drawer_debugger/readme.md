@@ -1,7 +1,7 @@
 [Week 6 Home](../)
 
 # U2.W6: Drawer Debugger
-
+ 
 
 ## Learning Competencies
 - Use error messages to correct syntax mistakes and/or drive development

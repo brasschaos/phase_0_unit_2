@@ -19,7 +19,7 @@ You are tasked with creating a `Car` object that is to operate in the context of
 - As a video game player, I need to be able to define a distance to drive so I can follow directions appropriately.
 - As a video game player, I'd like to be able to see the speed I am traveling, so I can properly accelerate or decelerate.
 - As a video game player, I want to be able to turn left or right so I can navigate a city and follow directions.
-- As a video game player, I want to be able to accelerate and decelerate the car to a defined speed so I can drive following the rules of the road. 
+- As a video game player, I want to be able to accelerate and decelerate the car to a defined speed so I can drive following the rules of the road.
 - As a video game player, I want to keep track of the total distance I have travelled, so I can get paid for mileage.
 - As a video game player, I want to be able to stop the car so I can follow traffic signs and signals.
 - As a video game player, I would like to see output reflecting the latest action of my car so I can see a play-by-play of the pizza delivery.

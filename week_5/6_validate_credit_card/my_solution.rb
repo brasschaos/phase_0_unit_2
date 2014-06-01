@@ -72,13 +72,16 @@ if sum % 10 == 0
   return true
 else return false
 end
+puts sum.to_s
 end
 
 
 end
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
-
+def assert
+  raise 'AssertionError!' unless yield
+end
 
 
 

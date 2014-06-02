@@ -13,7 +13,13 @@
 # 3. Initial Solution
 
 class RPNCalculator
-  # Define your methods, here!
+  def initialize(calc)
+  @= calc
+  end
+  
+  def evaluate
+  
+  end
 end
 
 

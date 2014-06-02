@@ -5,7 +5,22 @@
 
 
 # 2. Pseudocode
+	create class
+		define initialize method(name of board)
+		set name of board to instance variable
+	end initialize method
 
+	define word creating method
+	  iterate over coordinate inputs, taking the first and last characters of each coordinate pair and joining them together
+	end word create method
+
+	define row getting method
+		take selected array element from within the greater array i.e. the row
+	end row getting method
+
+	define column getting method
+	  iterate through each row, returning the item in each row matching the selected column
+	end column getting method
 
 
 # 3. Initial Solution
